@@ -123,7 +123,7 @@ $ bash scripts/kick-the-tires/kkt_evaluate_brisque_serfiq.sh
 #### STEP 3: Run the script on the local machine to download the customized outcomes and the clean images for evaluating the qualitative results of the methods.
 ```bash
 $ sftp -P <PORT> <USERNAME>@<HOST>
-sftp> get -r /root/GAP-Diff/infer/kick-the-tires/gap_diff_per16/n000089 <YOURPATH> 
+sftp> get -r /root/GAP-Diff/infer/kick-the-tires/gap_diff_per16/n000089/a_photo_of_sks_person <YOURPATH> 
 sftp> get -r /root/GAP-Diff/test_dataset/n000089 <YOURPATH> 
 ```
 
