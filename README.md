@@ -111,11 +111,11 @@ $ bash scripts/kick-the-tires/ktt_generate_db_infer.sh
 #### STEP 2: Run the two evaluation scripts to get four facial metrics of protective effect.(~1 human-minutes, ~2 compute-minutes)
 ```bash
 $ conda activate fdfr_ism
-$ bash scripts/kick-the-tires/kkt_evaluate_fdfr_ism.sh
+$ bash scripts/kick-the-tires/ktt_evaluate_fdfr_ism.sh
 # Expected output:
 # - Command line output the mean FDFR and ISM of the identity for each prompt in the customized outcomes
 $ conda activate serfiq
-$ bash scripts/kick-the-tires/kkt_evaluate_brisque_serfiq.sh
+$ bash scripts/kick-the-tires/ktt_evaluate_brisque_serfiq.sh
 # Expected output:
 # - Command line output the mean BRISQUE and SER-FIQ of the identity for each prompt in the customized outcomes
 ```
@@ -124,7 +124,7 @@ $ bash scripts/kick-the-tires/kkt_evaluate_brisque_serfiq.sh
 ```bash
 $ sftp -P <PORT> <USERNAME>@<HOST>
 sftp> get -r /root/GAP-Diff/infer/kick-the-tires/gap_diff_per16/n000089/a_photo_of_sks_person <YOURPATH> 
-sftp> get -r /root/GAP-Diff/test_dataset/n000089 <YOURPATH> 
+sftp> get -r /root/GAP-Diff/data/test_dataset/n000089/set_B <YOURPATH> 
 ```
 
 We have provided keywords `PORT`, `USERNAME` and `HOST` in the Instructions on HotCRP and the artifact appendix. If you are a Linux user, please format `YOURPATH` as `/username/xxx`, or you are a Windows user, please format as `D:\xxx`
@@ -236,9 +236,9 @@ $ bash benchmark/scripts/evaluate_brisque_serfiq.sh
 You can download the customized outcomes to compare the qualitative results of JPEG compression resistance of GAP-Diff and benchmarks.
 ```bash
 $ sftp -P <PORT> <USERNAME>@<HOST>
-sftp> get -r /root/GAP-Diff/test_dataset/n000061 <YOURPATH>
+sftp> get -r /root/GAP-Diff/data/test_dataset/n000061 <YOURPATH>
 sftp> get -r /root/GAP-Diff/infer/gap_diff_per16/n000061 <YOURPATH> 
-sftp> get -r /root/GAP-Diff/benchmark/infer/antidb_jpeg70/n000061 <YOURPATH>
+sftp> get -r /root/GAP-Diff/benchmark/infer/antidb_jpeg70/n000061/set_B <YOURPATH>
 sftp> get -r  <PATH_TO_OTHER_BENCHMARKS> <YOURPATH>
 ```
 
