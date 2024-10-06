@@ -19,7 +19,7 @@ Below you can find detailed instructions to verify the functionality of our meth
 ### Overview
 
 * [Getting started](#getting-started) (~1-10 human-minutes, ~10-30 compute-minutes)
-* [Kick-the-tires stage](#kick-the-tires-stage) (~8-10 human-minutes, ~14-16 compute-minutes)
+* [Kick-the-tires stage](#kick-the-tires-stage) (~2 human-minutes, ~20 compute-minutes)
 * [Counter customization](#counter-customization) (~2 human-minutes, ~1.5 compute-hours)
 * [Against JPEG compression](#against-jpeg-compression) (~10 human-minutes, ~7.5-10.5 compute-hours)
 * [Adverse setting](#adverse-setting) (~10 human-minutes, ~9 compute-hours)
