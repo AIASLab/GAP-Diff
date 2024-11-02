@@ -300,6 +300,15 @@ $ bash benchmark/scripts/ex/evaluate_brisque_serfiq_ex.sh
 ```
 
 #### Part 2: Run different fine-tuning methods (here SVDiff).
+Before proceeding, if you **cloned the svdiff branch directly**, please prepare as follows:
+- Place the `GAP-Diff/svdiff/svd.sh` file to match `svdiff-pytorch/scripts/svd.sh`.
+- Place the `GAP-Diff/svdiff/infer.py` file to match `svdiff-pytorch/infer.py`.
+- Modify line 30 of `svdiff-pytorch/scripts/svd.sh`: change `export INFER_OUTPUT=$(realpath "/root/GAP-Diff/infer/svdiff/$ID")` by replacing the absolute path `/root/GAP-Diff` with the path of your cloned `GAP-Diff` folder.
+- Place the `GAP-Diff/protected/protected_images/gap_diff_per16` folder to match `svdiff-pytorch/data/gap_diff_per16`.
+- Change line 577 of `svdiff-pytorch/train_svdiff.py` from `logging_dir=logging_dir,` to `project_dir=logging_dir,`.
+- Create a folder named `svdiff` in the `GAP-Diff/infer directory`.
+- After activating the svdiff environment, run `pip install huggingface_hub==0.25.2`.
+
 ```bash
 # go to the `svdiff-pytorch` folder
 $ cd ..
