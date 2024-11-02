@@ -3,7 +3,7 @@
 
 exec > >(cat) 2> results/evaluate_brisque_serfiq_error.txt
 
-export DATA_PATH="./infer/gap_diff_per16_jpeg70"
+export DATA_PATH="./infer/gap_diff_per16"
 
 
 export MXNET_USE_FUSION=0
