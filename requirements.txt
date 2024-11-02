@@ -13,4 +13,5 @@ torchvision==0.14.1
 numpy==1.26.1
 kornia
 opencv-python
+huggingface_hub==0.25.2
 --extra-index-url https://download.pytorch.org/whl/cu116
