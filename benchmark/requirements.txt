@@ -7,3 +7,4 @@ Jinja2
 torch==1.13.1
 six==1.16.0
 diffusers==0.21.0
+huggingface_hub==0.25.2
