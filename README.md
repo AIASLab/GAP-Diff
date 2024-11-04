@@ -93,6 +93,8 @@ $ pip install -r requirements.txt
 
 - You can also download [FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq), [VGGFace2](https://drive.google.com/drive/folders/1JX4IM6VMkkv4rER99atS4x4VGnoRNByV) and [CelebA-HQ](https://drive.google.com/drive/folders/1JX4IM6VMkkv4rER99atS4x4VGnoRNByV) (preprocessed by authors of [Anti-DreamBooth](https://github.com/VinAIResearch/Anti-DreamBooth)) for training and testing.
 - The pretrained weight of GAP-Diff can be downloaded from [here](https://drive.google.com/file/d/1UVYFNOLlXl2xZNgVzBkXmMsDx693R6ud/view?usp=drive_link), please place the weight file in `GAP-Diff/weights/model`.
+- If you are a user with 24GB or less GPU memory, please download the `class-person-2-1` folder from [here](https://drive.google.com/drive/folders/1zKPJfgfCETle1tpFtqAPbK_FNjHdEsb2?usp=drive_link) and place it to match `GAP-Diff/data/class-person-2-1`.
+
 ### Kick-the-tires stage
 In this step, we will test our setup by running a minimal working example to ensure that our artifacts run correctly.
 
