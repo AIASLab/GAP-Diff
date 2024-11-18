@@ -283,7 +283,7 @@ $ bash scripts/evaluate_brisque_serfiq.sh
 ### Adverse setting
 GAP-Diff maintains robust facial protection performance under adverse settings, including prompt mismatch, different fine-tuning methods, and different preprocessing techniques. This is demonstrated by the following experiments, with results presented in Fig. 13 and Tables IV, V, VI (in our original paper) .
 
-Note that **clear faces** may be generated in **Part 1** and **Part 2**, which could result in lower FDFR, and higher SER-FIQ, and BRISQUE scores. This is due to the diffusion model's customization not being fully achieved. However, we will observe that **ISM remains at a low level**, indicating that the generated faces do not conform to the customized identities.
+Note that **clear faces** may be generated in **Part 1** and **Part 2**, which could result in lower FDFR and BRISQUE, and higher SER-FIQ scores. This is due to the diffusion model's customization not being fully achieved. However, we will observe that **ISM remains at a low level**, indicating that the generated faces do not conform to the customized identities.
 
 #### Part 1: Train DreamBooth on prompt mismatch, and infer customized outcomes.  (~1.5 compute-hours)
 ```bash
