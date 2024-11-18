@@ -301,7 +301,7 @@ $ bash scripts/ex/evaluate_brisque_serfiq_ex.sh
 # - Command line output the four quantitative results of all identities for each prompt in the customized outcomes
 ```
 
-#### Part 2: Run different fine-tuning methods (here SVDiff).
+#### Part 2: Run different fine-tuning methods (here SVDiff). (~1.6 compute-hours)
 Before proceeding, if you **cloned the svdiff branch directly**, please prepare as follows:
 - Place the `GAP-Diff/svdiff/svd.sh` file to match `svdiff-pytorch/scripts/svd.sh`.
 - Place the `GAP-Diff/svdiff/infer.py` file to match `svdiff-pytorch/infer.py`.
@@ -311,6 +311,7 @@ Before proceeding, if you **cloned the svdiff branch directly**, please prepare 
 - Create a folder named `svdiff` in the `GAP-Diff/infer directory`.
 - After activating the svdiff environment, run `pip install huggingface_hub==0.25.2`.
 
+**AEC using our rented cloud server for testing can skip the above steps **
 ```bash
 # go to the `svdiff-pytorch` folder
 $ cd ..
@@ -333,7 +334,7 @@ $ bash scripts/evaluate_brisque_serfiq.sh
 # - Command line output the four quantitative results of all identities for each prompt in the customized outcomes
 ```
 
-#### Part 3: Run different preprocessing methods.
+#### Part 3: Run different preprocessing methods.(~1.5 compute-hours)
 ```bash
 # go to the `GAP-Diff` folder
 cd GAP-Diff
