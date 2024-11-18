@@ -293,9 +293,9 @@ cd GAP-Diff
 $ conda activate gap-diff
 $ bash scripts/db_infer_prompt_mismatch.sh
 $ conda activate fdfr_ism
-$ bash benchmark/scripts/ex/evaluate_fdfr_ism_ex.sh
+$ bash scripts/ex/evaluate_fdfr_ism_ex.sh
 $ conda activate serfiq
-$ bash benchmark/scripts/ex/evaluate_brisque_serfiq_ex.sh
+$ bash scripts/ex/evaluate_brisque_serfiq_ex.sh
 # Expected output:
 # - The customized outcomes are saved to GAP-Diff/infer/gap_diff_per16_ex 
 # - Command line output the four quantitative results of all identities for each prompt in the customized outcomes
