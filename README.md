@@ -57,12 +57,13 @@ $ pip install -e . # to this step the tensorflow in our environment is 2.13.1
 $ pip install torch
 $ conda create -n serfiq python=3.8
 $ conda activate serfiq
+$ cd ..
 $ cd FaceImageQuality/
 $ pip install -r requirements.txt
 ```
-- To compute FDFR and ISM. If you get block by proxy, manually download weight of [ArcFace](https://github.com/serengil/deepface_models/releases/download/v1.0/arcface_weights.h5) and [Retinaface](https://github.com/serengil/deepface_models/releases/download/v1.0/retinaface.h5), place it in folder `{home}/.deepface/weights/`.
+- To compute FDFR and ISM. If you get block by proxy, manually download weight of [ArcFace](https://github.com/serengil/deepface_models/releases/download/v1.0/arcface_weights.h5) and [Retinaface](https://github.com/serengil/deepface_models/releases/download/v1.0/retinaface.h5), place it in folder `{home}/.deepface/weights/`, where `{home}` means the user home directory, e.g., the `$HOME` directory in Linux.
 
-- To compute SER-FIQ, [download the model files](https://drive.google.com/file/d/17fEWczMzTUDzRTv9qN3hFwVbkqRD7HE7/view?usp=sharing) and place them in the `insightface/model`
+- To compute SER-FIQ, [download the model files](https://drive.google.com/file/d/17fEWczMzTUDzRTv9qN3hFwVbkqRD7HE7/view?usp=sharing) and place them in the `GAP-Diff/evaluations/FaceImageQuality/insightface/model`.
 
 - To build the environment for the additional fine-tuning method SVDiff
 ```bash
@@ -71,8 +72,8 @@ $ conda create -n svdiff python=3.9
 $ conda activate svdiff
 $ pip install -r requirements.txt
 ```
-- Pretrained checkpoints of different Stable Diffusion versions can be **downloaded** from provided links in the table below, you should modify the path in scripts after downloading:
-<table style="width:100%">
+- Pretrained checkpoints of different Stable Diffusion versions can be **downloaded** from provided links in the table below, you should modify the path in scripts after downloading, and they should be placed following the structure `GAP-Diff/stable-diffusion/stable-diffusion-2-1-base`:
+  <table style="width:100%">
   <tr>
     <th>Version</th>
     <th>Link</th>
@@ -89,11 +90,12 @@ $ pip install -r requirements.txt
     <td>1.4</td>
     <td><a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">stable-diffusion-v1-4</a></td>
   </tr>
-</table>
-
-- You can also download [FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq), [VGGFace2](https://drive.google.com/drive/folders/1JX4IM6VMkkv4rER99atS4x4VGnoRNByV) and [CelebA-HQ](https://drive.google.com/drive/folders/1JX4IM6VMkkv4rER99atS4x4VGnoRNByV) (preprocessed by authors of [Anti-DreamBooth](https://github.com/VinAIResearch/Anti-DreamBooth)) for training and testing.
+  </table>
+- You can also download [FFHQ](https://www.kaggle.com/datasets/arnaud58/flickrfaceshq-dataset-ffhq), [VGGFace2](https://drive.google.com/drive/folders/1JX4IM6VMkkv4rER99atS4x4VGnoRNByV) and [CelebA-HQ](https://drive.google.com/drive/folders/1JX4IM6VMkkv4rER99atS4x4VGnoRNByV) (preprocessed by authors of [Anti-DreamBooth](https://github.com/VinAIResearch/Anti-DreamBooth)) for the whole training and testing, which should be placed in folder `GAP-Diff/data`. 
 - The pretrained weight of GAP-Diff can be downloaded from [here](https://drive.google.com/file/d/1UVYFNOLlXl2xZNgVzBkXmMsDx693R6ud/view?usp=drive_link), please place the weight file in `GAP-Diff/weights/model`.
 - If you are a user with 24GB or less GPU memory, please download the `class-person-2-1` folder from [here](https://drive.google.com/drive/folders/1zKPJfgfCETle1tpFtqAPbK_FNjHdEsb2?usp=drive_link) and place it to match `GAP-Diff/data/class-person-2-1`.
+
+
 
 ### Kick-the-tires stage
 In this step, we will test our setup by running a minimal working example to ensure that our artifacts run correctly.
