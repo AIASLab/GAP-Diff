@@ -1,5 +1,7 @@
 # GAP-Diff: Protecting JPEG-Compressed Images from Diffusion-based Facial Customization
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14249397.svg)](https://doi.org/10.5281/zenodo.14249397)
+
 This repository contains the artifact for the paper _GAP-Diff: Protecting JPEG-Compressed Images from Diffusion-based Facial Customization_ that will appear at [NDSS Symposium 2025](https://www.ndss-symposium.org/ndss2025/). 
 
 This branch contains the exact code that will be evaluated during the Artifact Evaluation (AE) process of NDSS'25. We are now applying for the _Available_ and _Functional_ badges. 
